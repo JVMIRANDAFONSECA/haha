@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <button id="evil-button-of-dead">Totally Not Suspicious Button</button>
+    <div class="page">
+        <img src="https://d25tv1xepz39hi.cloudfront.net/2016-07-16/files/cat-sample_1313.jpg">
+        <button id="evil-button-of-dead">Totally Not Suspicious Button</button>
+    </div>
+
     <div id="cat-land"></div>
     <audio id="evil-cat-screeeeaaam" src="./Cat Yelling In Fear-SoundBible.com-455973055.mp3" style="display: none;"></audio>
     <script>
@@ -20,7 +25,7 @@
                     const catland = document.querySelector('#cat-land')
                     catland.insertAdjacentHTML('beforeend', '<img src="https://www.chemeyes.co.uk/wp-content/uploads/2019/02/aggressive-cat-e1584539307526.png">')
                     audio.play()
-                }, 1000)
+                }, 300)
             }
         })
     </script>
