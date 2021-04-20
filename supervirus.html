@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="evil-button-of-dead">Totally Not Suspicious Button</button>
+    <div id="cat-land"></div>
+    <audio id="evil-cat-screeeeaaam" src="./Cat Yelling In Fear-SoundBible.com-455973055.mp3" style="display: none;"></audio>
+    <script>
+        let count = 0
+        document.addEventListener('click', (ev) => {
+            if(ev.target.matches('#evil-button-of-dead')) {
+                const audio = document.querySelector('#evil-cat-screeeeaaam')
+
+                const intervalId = setInterval(() => {
+                    const catland = document.querySelector('#cat-land')
+                    catland.insertAdjacentHTML('beforeend', '<img src="https://www.chemeyes.co.uk/wp-content/uploads/2019/02/aggressive-cat-e1584539307526.png">')
+                    audio.play()
+                }, 1000)
+            }
+        })
+    </script>
+</body>
+</html>
